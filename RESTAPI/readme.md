@@ -6,7 +6,7 @@
 POST /api/users
 ```
 
-##### Input
+### Input
 
 | 项目名称    | 类型   | 描述         |
 | ----------- | ------ | ------------ |
@@ -15,7 +15,7 @@ POST /api/users
 | captchaId   | string | 图形验证码id |
 | captchaCode | string | 用户识别结果 |
 
-##### Example
+### Example
 
 ```
 {
@@ -27,7 +27,7 @@ POST /api/users
 }
 ```
 
-##### Response
+### Response
 
 >Status: 201 Created
 >
@@ -49,7 +49,7 @@ POST /api/users
 GET /api/users/captcha
 ```
 
-##### Response
+### Response
 
 >Status: 200 OK
 >
@@ -70,7 +70,7 @@ GET /api/users/captcha
 POST /api/users/login
 ```
 
-##### Input
+### Input
 
 | 项目名称    | 类型   | 描述         |
 | ----------- | ------ | ------------ |
@@ -79,7 +79,7 @@ POST /api/users/login
 | captchaId   | string | 图形验证码id |
 | captchaCode | string | 用户识别结果 |
 
-##### Example
+### Example
 
 ```
 {
@@ -90,7 +90,7 @@ POST /api/users/login
 }
 ```
 
-##### Response
+### Response
 
 > Status: 200 OK
 >
@@ -111,13 +111,13 @@ POST /api/users/login
 POST /api/categories
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称     | 类型   | 描述         |
 | ------------ | ------ | ------------ |
 | categoryName | string | 分类列表名称 |
 
-##### Response
+### Response
 
 >Status: 201 Created
 >
@@ -138,14 +138,14 @@ POST /api/categories
 GET /api/categories
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称 | 类型   | 描述     |
 | -------- | ------ | -------- |
 | page     | number | 页码     |
 | size     | number | 页内项数 |
 
-##### Response
+### Response
 
 >Status: 200 OK
 >
@@ -176,13 +176,13 @@ GET /api/categories
 PUT /api/categories/:categoryId
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称     | 类型   | 描述         |
 | ------------ | ------ | ------------ |
 | categoryName | string | 分类列表名称 |
 
-##### Response
+### Response
 
 >Status: 200 OK
 >
@@ -196,13 +196,13 @@ PUT /api/categories/:categoryId
 DELETE /api/categories/:categoryId
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称     | 类型   | 描述         |
 | ------------ | ------ | ------------ |
 | categoryName | string | 分类列表名称 |
 
-##### Response
+### Response
 
 >Status: 204 No Content
 >
@@ -216,7 +216,7 @@ DELETE /api/categories/:categoryId
 POST /api/articles
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称       | 类型   | 描述        |
 | -------------- | ------ | ----------- |
@@ -224,7 +224,7 @@ POST /api/articles
 | articleTitle   | string | 文章标题    |
 | articleContent | string | 文章内容    |
 
-##### Response
+### Response
 
 >Status: 201 Created
 >
@@ -248,13 +248,13 @@ POST /api/articles
 GET /api/articles/:articleId
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称     | 类型   | 描述     |
 | ------------ | ------ | -------- |
 | articleTitle | string | 文章标题 |
 
-##### Response
+### Response
 
 >Status: 200 OK
 >
@@ -276,7 +276,7 @@ GET /api/articles/:articleId
 PUT /api/articles/:articleId
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称       | 类型   | 描述        |
 | -------------- | ------ | ----------- |
@@ -284,7 +284,7 @@ PUT /api/articles/:articleId
 | articleTitle   | string | 文章标题    |
 | articleContent | string | 文章内容    |
 
-##### Response
+### Response
 
 >Status: 200 OK
 >
@@ -307,13 +307,13 @@ PUT /api/articles/:articleId
 DELETE /api/articles/:articleId
 ```
 
-##### Parameters
+### Parameters
 
 | 项目名称     | 类型   | 描述     |
 | ------------ | ------ | -------- |
 | articleTitle | string | 文章标题 |
 
-##### Response
+### Response
 
 >Status: 204 No Content
 >
